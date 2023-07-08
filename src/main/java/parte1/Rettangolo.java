@@ -5,10 +5,9 @@ public class Rettangolo {
     private int b;
 
     /**
-     * questo metodo è il costruttore della classe Rettangolo, il costruttore è public e ha lo stesso nome della classe
-     * al costruttore vengono passati solitamente dei parametri che andranno ad inizializzare le variabili dell'oggetto
-     * in questo caso la variabile a e la variabile b
-     * da notare che quando si usa this.a ci si riferisce alla variabile locale, invece quando si usa solo a al parametro
+     * il costruttore di una classe ha il nome della classe stessa e serve per inizializzare l'oggetto di quella classe
+     * da notare l'uso di this.a = a, dove this.a identifica la viariabile della classe e a identifica la variabile
+     * passata come parametro
      * @param a lato 1
      * @param b lato 2
      */
@@ -22,8 +21,13 @@ public class Rettangolo {
      * @return restituisce il perimetro (int)
      */
     public int perimetro() {
+        //inizializzo una variabile locale che mi serve per i calcoli
         int perimetro;
+
+        //eseguo il calcolo/operazione
         perimetro = (a+b)*2;
+
+        //ritorno il risultato della operazione
         return perimetro;
     }
 

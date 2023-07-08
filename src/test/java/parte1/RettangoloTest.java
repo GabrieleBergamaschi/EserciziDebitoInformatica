@@ -6,10 +6,14 @@ public class RettangoloTest {
         //viene creato un oggetto rettangolo e viene chiamato il suo costruttore passando i parametri
         Rettangolo rettangolo = new Rettangolo(5, 6);
 
-        //serie di stampe per chiamare i metodi dell'oggetto rettangolo
-        //per chiamare i metodi la sintassi è: rettangolo.nomeDelMetodo()
-        System.out.println("il perimetro è: " + rettangolo.perimetro());
-        System.out.println("l'area è: " + rettangolo.area());
-        System.out.println("la diagonale è: " + rettangolo.diagonale());
+        //chiamo i metodi della classe rettangolo per calcolare tutti i dati richiesti dal problema
+        int perimetro = rettangolo.perimetro();
+        float area = rettangolo.area();
+        double diagonale = rettangolo.diagonale();
+
+        //stampo i dati richiesti dal problema a video
+        System.out.println("il perimetro è: " + perimetro);
+        System.out.println("l'area è: " + area);
+        System.out.println("la diagonale è: " + diagonale);
     }
 }
