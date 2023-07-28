@@ -30,15 +30,14 @@ public class Piatto {
         }
     }
 
-    public boolean ingredienteIsPresent(String ingrediente) {
+    public void ingredienteIsPresent(String ingrediente) {
         for(String elemento: ingredienti) {
             if(elemento.equals(ingrediente)) {
                 System.out.println(ingrediente + " presente");
-                return true;
+                return;
             }
         }
         System.out.println(ingrediente + " non presente");
-        return false;
     }
 
     public void setNome(String nome) {
