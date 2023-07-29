@@ -14,5 +14,10 @@ public class BranoTest {
         disco.add(brano2);
         disco.add(brano3);
 
+        System.out.println("il brano più lungo tra " + brano1.getTitolo()  + " e " + brano2.getTitolo() + " è il brano " +
+                brano1.confrontaBrani(brano2).getTitolo());
+        System.out.println("il brano più lungo del disco è: " + disco.get(0).getBranoMax(disco).getTitolo());
+        //un'altra possibilità è quella di mettere una classe in BranoTest o addirittura fare il calcolo all'interno
+        //della classe Main
     }
 }

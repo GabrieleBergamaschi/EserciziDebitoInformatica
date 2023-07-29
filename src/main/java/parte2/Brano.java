@@ -1,5 +1,7 @@
 package parte2;
 
+import java.util.ArrayList;
+
 public class Brano {
 
     private String titolo;
@@ -15,6 +17,14 @@ public class Brano {
             return brano;
         }
         return this;
+    }
+
+    public Brano getBranoMax(ArrayList<Brano> disco) {
+        Brano brano = disco.get(0);
+        for(Brano b: disco) {
+            brano = b.confrontaBrani(brano);
+        }
+        return brano;
     }
 
     public void setTitolo(String titolo) {
