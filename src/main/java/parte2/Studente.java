@@ -41,8 +41,8 @@ public class Studente {
 
     public float mediaVoti() {
         int somma = 0;
-        for (int voto : voti) {
-            somma += voto;
+        for(int i=0; i<voti.length; i++) {
+            somma = somma + voti[i];
         }
         return (float)somma/voti.length;
     }
